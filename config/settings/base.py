@@ -82,7 +82,8 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "coruscant_django.users",
-    # Your stuff: custom apps go here
+    "coruscant_django.dashboard",
+    "coruscant_django.servers",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS

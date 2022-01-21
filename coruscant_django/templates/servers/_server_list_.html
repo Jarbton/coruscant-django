@@ -1,0 +1,26 @@
+<div class="table-responsive">
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>URL</th>
+                <th>IP</th>
+                <th>Port</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for server in servers_list %}
+                <tr>
+                    <td>{{ server.name }}</td>
+                    <td>{{ server.url }}</td>
+                    <td>{{ server.ip_address }}</td>
+                    <td>{{ server.port }}</td>
+                </tr>
+            {% empty %}
+                <tr>
+                    <td>No servers</td>
+                <tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
