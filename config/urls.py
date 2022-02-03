@@ -17,7 +17,7 @@ urlpatterns = [
     # User management
     path("users/", include("coruscant_django.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
-    # Your stuff: custom urls includes go here
+    # path("drives/", include("corsucant_django.drives.urls", namespace="drives"))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # API URLS

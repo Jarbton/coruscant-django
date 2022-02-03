@@ -84,6 +84,7 @@ LOCAL_APPS = [
     "coruscant_django.users",
     "coruscant_django.dashboard",
     "coruscant_django.servers",
+    "coruscant_django.drives",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
